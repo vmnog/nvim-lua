@@ -27,3 +27,10 @@ vim.api.nvim_set_keymap(
   ":Telescope file_browser path=%:p:h select_buffer=true<CR>",
   { noremap = true }
 )
+
+vim.api.nvim_set_keymap(
+  "n",
+  "<leader>fp",
+  ":Telescope file_browser<CR>",
+  { noremap = true }
+)

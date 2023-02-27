@@ -32,6 +32,7 @@
 | <leader>fh                 | open find help tags (search manuals)            |
 | <leader>fg                 | open find grep string (search pattern)          |
 | <leader>fb                 | open file browser in current buffer             |
+| <leader>fp                 | open file browser from current folder path      |
 |
 | (Fugitive - Git) Shortcuts | What it does ?                                  |
 | ---------------            | ---------------                                 |
