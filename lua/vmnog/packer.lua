@@ -57,4 +57,8 @@ return require('packer').startup(function(use)
           require('Comment').setup()
       end
   }
+
+  -- For moving files and have LSP update references
+  use "nvim-lua/plenary.nvim"
+  use "jose-elias-alvarez/nvim-lsp-ts-utils"
 end)

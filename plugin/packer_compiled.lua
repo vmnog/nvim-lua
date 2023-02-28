@@ -110,6 +110,11 @@ _G.packer_plugins = {
     path = "/home/vmnog/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
   },
+  ["nvim-lsp-ts-utils"] = {
+    loaded = true,
+    path = "/home/vmnog/.local/share/nvim/site/pack/packer/start/nvim-lsp-ts-utils",
+    url = "https://github.com/jose-elias-alvarez/nvim-lsp-ts-utils"
+  },
   ["nvim-lspconfig"] = {
     loaded = true,
     path = "/home/vmnog/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
