@@ -1,43 +1,44 @@
 # vmnog 2023 nvim + lua config
 
 ```markdown
-| (Vim) Shortcuts            | What it does ?                                  |
-| -------------------------- | ----------------------------------------------- |
-| <leader>pv                 | Do command :Explore (vim file explorer)         |
-| <leader>p                  | paste text without yanking                      |
-| <leader>y                  | yank text to clipboard                          |
-| <leader>f                  | format current buffer                           |
-| <leader>s                  | search and replace current hover word           |
-| <leader>vpp                | opens packer config file                        |
-| <leader><leader>           | Do command :source                              |
-|
-| (LSP Zero) Shortcuts       | What it does ?                                  |
-| ---------------            | ---------------                                 |
-| <C-Space>                  | while insert mode, toggle completions           |
-| <C-p>                      | while completions visible, select next item     |
-| <C-n>                      | while completions visible, select previous item |
-| <C-y>                      | while completions visible, complete selection   |
-| gd                         | go to definition                                |
-| K                          | show hover definition                           |
-| [d                         | go to next diagnostic error                     |
-| ]d                         | go to previous diagnostic error                 |
-| <leader>vca                | show code actions                               |
-| <leader>vrr                | show references                                 |
-| <leader>vrn                | rename buffer                                   |
-| <C-h>                      | while in insert mode, show signature (hover)    |
-|
-| (Telescope) Shortcuts      | What it does ?                                  |
-| ---------------            | ---------------                                 |
-| <leader>ff                 | open find files                                 |
-| <leader>fh                 | open find help tags (search manuals)            |
-| <leader>fg                 | open find grep string (search pattern)          |
-| <leader>fb                 | open file browser in current buffer             |
-| <leader>fp                 | open file browser from current folder path      |
-|
-| (Fugitive - Git) Shortcuts | What it does ?                                  |
-| ---------------            | ---------------                                 |
-| <leader>gs                 | opens fugitive (git tool)                       |
-|
-| (Undotree) Shortcuts       | What it does ?                                  |
-| ---------------            | ---------------                                 |
-| <leader>u                  | open undo tree history                          |
+| Mode                         | (Vim) Shortcuts                                   | What it does ?                                    |
+|------------------------------|---------------------------------------------------|---------------------------------------------------|
+| n                            | <leader>pv                                        | Do command :Explore (vim file explorer)           |
+| n                            | <leader>p                                         | paste text without yanking                        |
+| n                            | <leader>y                                         | yank text to clipboard                            |
+| n                            | <leader>f                                         | format current buffer                             |
+| n                            | <leader>s                                         | search and replace current hover word             |
+| n                            | <leader>vpp                                       | opens packer config file                          |
+| n                            | <leader><leader>                                  | Do command :source                                |
+| Mode                         | (LSP config) Shortcuts                            | What it does ?                                    |
+| ---------------------------- | ------------------------------------------------- | ------------------------------------------------- |
+| n                            | <leader>e                                         | vim.diagnostic.open_float                         |
+| n                            | [d                                                | vim.diagnostic.goto_prev                          |
+| n                            | ]d                                                | vim.diagnostic.goto_next                          |
+| n                            | <leader>q                                         | vim.diagnostic.setloclist                         |
+| n                            | gD                                                | vim.lsp.buf.declaration                           |
+| n                            | gd                                                | vim.lsp.buf.definition                            |
+| n                            | K                                                 | vim.lsp.buf.hover                                 |
+| n                            | gi                                                | vim.lsp.buf.implementation                        |
+| n                            | <C-k>                                             | vim.lsp.buf.signature_help                        |
+| n                            | <leader>wa                                        | vim.lsp.buf.add_workspace_folder                  |
+| n                            | <leader>wr                                        | vim.lsp.buf.remove_workspace_folder               |
+| n                            | <leader>wl                                        | vim.inspect(vim.lsp.buf.list_workspace_folders()  |
+| n                            | <leader>D                                         | vim.lsp.buf.type_definition                       |
+| n                            | <leader>rn                                        | vim.lsp.buf.rename                                |
+| n                            | <leader>ca                                        | vim.lsp.buf.code_action                           |
+| n                            | gr                                                | vim.lsp.buf.references                            |
+| n                            | <leader>f                                         | vim.lsp.buf.format                                |
+| Mode                         | (Telescope) Shortcuts                             | What it does ?                                    |
+| ---------------------------- | ------------------------------------------------- | ------------------------------------------------- |
+| n                            | <leader>ff                                        | open find files                                   |
+| n                            | <leader>fh                                        | open find help tags (search manuals)              |
+| n                            | <leader>fg                                        | open find grep string (search pattern)            |
+| n                            | <leader>fb                                        | open file browser in current buffer               |
+| n                            | <leader>fp                                        | open file browser from current folder path        |
+| Mode                         | (Fugitive - Git) Shortcuts                        | What it does ?                                    |
+| ---------------------------- | ------------------------------------------------- | ------------------------------------------------- |
+| n                            | <leader>gs                                        | opens fugitive (git tool)                         |
+| Mode                         | (Undotree) Shortcuts                              | What it does ?                                    |
+| ---------------------------- | ------------------------------------------------- | ------------------------------------------------- |
+| n                            | <leader>u                                         | open undo tree history                            |
